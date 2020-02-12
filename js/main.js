@@ -115,3 +115,5 @@ function restartGame() {
 choices.forEach(choice => choice.addEventListener("click", play));
 window.addEventListener("click", clearModal);
 restart.addEventListener("click", restartGame);
+window.addEventListener("touchcancel", clearModal);
+restart.addEventListener("touchcancel", restartGame);
